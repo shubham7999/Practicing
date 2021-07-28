@@ -5,7 +5,13 @@ module.exports.profile = function(req, res)
     })
 }
 
-module.exports.post = function(req, res)
+module.exports.signin = function(req, res)
 {
-    res.send('<h1> User post is here </h1>');
+    res.render('signin');
 }
+
+module.exports.signup = function(req , res)
+{
+    res.render('signup');
+}
+
